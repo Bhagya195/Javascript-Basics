@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        function string_to_array(s) {
+            const m = s.split(" ");
+            for (let i = 0; i < m.length; i++) {
+                m[i] = '"' + m[i] + '"';
+            }
+            return m;
+        }
+        const s = prompt("Enter string:");
+        document.getElementById("demo").innerHTML = string_to_array(s);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const a = prompt("Enter array elements with spaces:").split(" ");
+        document.getElementById("demo1").innerHTML = a;
+
+        function compare(a, b) {
+            return a - b;
+        }
+
+        a.sort(compare);
+        document.getElementById("demo2").innerHTML = a;
+    </script>
+</body>
+
+
+</html>
